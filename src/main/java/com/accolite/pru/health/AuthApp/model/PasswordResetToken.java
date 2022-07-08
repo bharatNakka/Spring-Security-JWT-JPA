@@ -102,4 +102,5 @@ public class PasswordResetToken extends DateAudit {
     public void setClaimed(Boolean claimed) {
         this.claimed = claimed;
     }
+    //VERITA-93
 }
