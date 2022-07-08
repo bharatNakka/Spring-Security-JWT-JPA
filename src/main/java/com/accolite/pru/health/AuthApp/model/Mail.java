@@ -74,4 +74,5 @@ public class Mail {
     public void setModel(Map<String, String> model) {
         this.model = model;
     }
+    //VERITA-204
 }
