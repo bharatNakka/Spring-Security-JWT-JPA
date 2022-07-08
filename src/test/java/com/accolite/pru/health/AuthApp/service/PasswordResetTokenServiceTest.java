@@ -162,5 +162,6 @@ public class PasswordResetTokenServiceTest {
         InvalidTokenRequestException ex = assertThrows(InvalidTokenRequestException.class,
                 () -> service.matchEmail(token, request.getEmail()));
         assertTrue(ex.getMessage().contains("Token is invalid for the given user email-2"));
+        //VERITA-177
     }
 }
