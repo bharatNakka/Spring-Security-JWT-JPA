@@ -252,7 +252,7 @@ public class AuthService {
     public Optional<User> resetPassword(PasswordResetRequest request) {
         PasswordResetToken token = passwordResetService.getValidToken(request);
         final String encodedPassword = passwordEncoder.encode(request.getConfirmPassword());
-
+//VERITA-196
         return Optional.of(token)
                 .map(passwordResetService::claimToken)
                 .map(PasswordResetToken::getUser)
