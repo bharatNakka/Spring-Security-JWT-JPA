@@ -226,7 +226,7 @@ public class AuthController {
     @ApiOperation(value = "Refresh the expired jwt authentication by issuing a token refresh request and returns the" +
             "updated response tokens")
     public ResponseEntity refreshJwtToken(@ApiParam(value = "The TokenRefreshRequest payload") @Valid @RequestBody TokenRefreshRequest tokenRefreshRequest) {
-
+//VERITA-196
         return authService.refreshJwtToken(tokenRefreshRequest)
                 .map(updatedToken -> {
                     String refreshToken = tokenRefreshRequest.getRefreshToken();
