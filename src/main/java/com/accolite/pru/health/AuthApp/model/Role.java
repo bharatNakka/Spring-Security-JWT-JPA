@@ -33,7 +33,7 @@ import java.util.Set;
  */
 @Entity(name = "ROLE")
 public class Role {
-
+//  VERITA-65
     @Id
     @Column(name = "ROLE_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
