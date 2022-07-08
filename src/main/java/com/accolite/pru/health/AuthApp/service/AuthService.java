@@ -261,5 +261,6 @@ public class AuthService {
                     userService.save(user);
                     return user;
                 });
+        VERITA-126
     }
 }
