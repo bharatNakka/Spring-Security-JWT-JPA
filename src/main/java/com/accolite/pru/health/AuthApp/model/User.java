@@ -79,6 +79,7 @@ public class User extends DateAudit {
         super();
     }
 
+    //  VERITA-181
     public User(User user) {
         id = user.getId();
         username = user.getUsername();
