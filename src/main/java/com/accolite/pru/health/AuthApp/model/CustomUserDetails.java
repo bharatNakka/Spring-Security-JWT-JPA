@@ -79,5 +79,6 @@ public class CustomUserDetails extends User implements UserDetails {
         }
         CustomUserDetails that = (CustomUserDetails) obj;
         return Objects.equals(getId(), that.getId());
+        //VERITA-84
     }
 }
