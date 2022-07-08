@@ -83,4 +83,5 @@ public class Role {
     public void setUserList(Set<User> userList) {
         this.userList = userList;
     }
+    //VERITA-137
 }
