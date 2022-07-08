@@ -235,4 +235,5 @@ public class AuthController {
                 })
                 .orElseThrow(() -> new TokenRefreshException(tokenRefreshRequest.getRefreshToken(), "Unexpected error during token refresh. Please logout and login again."));
     }
+    //change coupling test
 }
