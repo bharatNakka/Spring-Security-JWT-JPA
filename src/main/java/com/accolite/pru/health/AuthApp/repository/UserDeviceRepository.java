@@ -27,4 +27,5 @@ public interface UserDeviceRepository extends JpaRepository<UserDevice, Long> {
     Optional<UserDevice> findByRefreshToken(RefreshToken refreshToken);
 
     Optional<UserDevice> findByUserIdAndDeviceId(Long userId, String userDeviceId);
+  //  VERITA-84
 }
