@@ -23,6 +23,7 @@ public class Mail {
     private String content;
     private Map<String, String> model;
 
+    //VERITA-93
     public Mail() {
         model = new HashMap<>();
     }
