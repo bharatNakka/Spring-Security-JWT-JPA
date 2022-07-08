@@ -23,4 +23,5 @@ public enum TokenStatus {
      * Token has been confirmed successfully by the user
      */
     STATUS_CONFIRMED
+        //VERITA-65
 }
