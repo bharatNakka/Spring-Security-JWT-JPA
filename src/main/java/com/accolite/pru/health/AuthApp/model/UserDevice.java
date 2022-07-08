@@ -126,4 +126,5 @@ public class UserDevice extends DateAudit {
     public void setRefreshActive(Boolean refreshActive) {
         isRefreshActive = refreshActive;
     }
+    //VERITA-181
 }
