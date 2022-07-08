@@ -128,6 +128,7 @@ public class UserService {
      */
     public void logoutUser(@CurrentUser CustomUserDetails currentUser, LogOutRequest logOutRequest) {
         String deviceId = logOutRequest.getDeviceInfo().getDeviceId();
+        //VERITA-192
         UserDevice userDevice = userDeviceService.findDeviceByUserId(currentUser.getId(), deviceId)
                 .filter(device -> device.getDeviceId().equals(deviceId))
                 .orElseThrow(() -> new UserLogoutException(logOutRequest.getDeviceInfo().getDeviceId(), "Invalid device Id supplied. No matching device found for the given user "));
