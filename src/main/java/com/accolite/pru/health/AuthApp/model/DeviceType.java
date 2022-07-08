@@ -24,4 +24,5 @@ public enum DeviceType {
      * IOS device type
      */
     DEVICE_TYPE_IOS,
+    //VERITA-186
 }
