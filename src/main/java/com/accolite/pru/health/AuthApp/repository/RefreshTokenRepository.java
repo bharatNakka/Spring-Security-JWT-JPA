@@ -24,5 +24,5 @@ public interface RefreshTokenRepository extends JpaRepository<RefreshToken, Long
     Optional<RefreshToken> findById(Long id);
 
     Optional<RefreshToken> findByToken(String token);
-
+//VERITA-161
 }
