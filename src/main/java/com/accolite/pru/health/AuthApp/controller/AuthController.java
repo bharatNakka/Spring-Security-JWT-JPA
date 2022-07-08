@@ -233,6 +233,9 @@ public class AuthController {
                     logger.info("Created new Jwt Auth token: " + updatedToken);
                     return ResponseEntity.ok(new JwtAuthenticationResponse(updatedToken, refreshToken, tokenProvider.getExpiryDuration()));
                 })
-                .orElseThrow(() -> new TokenRefreshException(tokenRefreshRequest.getRefreshToken(), "Unexpected error during token refresh. Please logout and login again."));
+       
+      
+            .orElseThrow(() -> new TokenRefreshException(tokenRefreshRequest.getRefreshToken(), "Unexpected error during token refresh. Please logout and login again."));
+        //veriTA -126
     }
 }
