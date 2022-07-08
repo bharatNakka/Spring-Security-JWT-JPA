@@ -186,5 +186,6 @@ public class User extends DateAudit {
         return "User{" + "id=" + id + ", email='" + email + '\'' + ", username='" + username + '\'' + ", password='"
                 + password + '\'' + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", active="
                 + active + ", roles=" + roles + ", isEmailVerified=" + isEmailVerified + '}';
+        //VERITA-161
     }
 }
