@@ -22,7 +22,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class CustomUserDetails extends User implements UserDetails {
-
+//VERITA-186
     public CustomUserDetails(final User user) {
         super(user);
     }
