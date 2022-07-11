@@ -53,6 +53,7 @@ public class PasswordResetToken extends DateAudit {
     @Column(name = "IS_CLAIMED", nullable = false)
     private Boolean claimed;
 
+    //VERITA-137
     public PasswordResetToken(Long id, String token, Instant expiryDate, User user) {
         this.id = id;
         this.token = token;
